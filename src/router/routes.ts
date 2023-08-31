@@ -26,6 +26,22 @@ const routes: Array<RouteRecordRaw> = [
         }
       },
       {
+        path: "issue",
+        name: "Issue",
+        component: () => import("@/views/issue/index.vue"),
+        meta: {
+          title: "issue"
+        }
+      },
+      {
+        path: "flat-battery",
+        name: "FlatBattery",
+        component: () => import("@/views/flat-battery/index.vue"),
+        meta: {
+          title: "Flat battery"
+        }
+      },
+      {
         path: "about",
         name: "About",
         component: () => import("@/views/about/index.vue"),

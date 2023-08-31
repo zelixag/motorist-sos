@@ -1,6 +1,8 @@
 <script setup lang="ts" name="Demo">
 import { reactive, ref } from "vue";
+import { useRouter } from "vue-router";
 const active = ref("battery");
+const router = useRouter();
 const gridList = [
   {
     iconName: "battery",
@@ -58,6 +60,7 @@ const gridList = [
         @click="
           () => {
             active = item.iconName;
+            router.push({ name: 'Issue' });
           }
         "
         class="grid-item rounded-[20px] w-[110px] h-[110px] flex flex-col justify-center items-center"
