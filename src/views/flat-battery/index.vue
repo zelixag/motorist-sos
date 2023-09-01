@@ -42,7 +42,6 @@
   </div>
   <van-action-sheet
     v-model:show="showBottom"
-    :actions="actions"
     :overlay="false"
     title="Your checklist"
     close-on-click-action
